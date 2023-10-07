@@ -1,0 +1,6 @@
+We have App.js and at App.js at different level different components. Our requirement which is also their requirement for the example is to share a counter state between A, D, F so, we are going to maintain counter state at App.js i.e., counter = 0; but we share that state and method to change its state deep down in a component tree. 
+Passing props to so many level is definely a bad idea. thou the good idea is to Context API. because we are doing hooks we have to use useContext hook.
+
+While doing this program I faced alot of problem.
+1. Forgot to import userContext.
+2. export variable was in camelCase- it shouldn't be in camelCase it should be Startcase.
